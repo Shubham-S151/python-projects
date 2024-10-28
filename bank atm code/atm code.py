@@ -1,4 +1,4 @@
-# bank login page
+# bank atm code
 # create a sample bank data for this code and import it into python 
 import pandas as pd
 import numpy as num
