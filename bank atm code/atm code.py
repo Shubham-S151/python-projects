@@ -42,6 +42,7 @@ d={'operation':['cash withdraw',
    'transfer',
    'change card password',
    'new registration'],'number':[1,2,3,4,5]}
+# index can be changed accordingly
 opt=pd.DataFrame(d,index=['*','*','*','*','*'])
 print(opt)
 a=int(input('select the option below :'))
