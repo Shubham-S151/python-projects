@@ -1,3 +1,5 @@
+# this code is currently incomplete
+
 # Bank atm code
 ## Overview
 This project is a simple bank login page implemented in Python. It allows users to log in, register, check their balance, withdraw cash, and change their password using data stored in an Excel file.
