@@ -37,12 +37,13 @@ def loginandregis():
 
 # code starts
 print('WELCOME TO ABC BANK \n select what you want to do :')
-d={'cash withdraw':1,
-   'balance inquiry':2,
-   'transfer':3,
-   'change card password':4,
-   'new registration':5}
-print(d,sep='\n')
+d={'operation':['cash withdraw',
+   'balance inquiry',
+   'transfer',
+   'change card password',
+   'new registration'],'number':[1,2,3,4,5]}
+opt=pd.DataFrame(d,index=['*','*','*','*','*'])
+print(opt)
 a=int(input('select the option below :'))
 if a==1:
     print('cash withdraw')
