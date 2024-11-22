@@ -24,7 +24,8 @@ def login():
         name=cursor.fetchone()
         if name:
             print(f'Welcome, {name[2]} {name[3]} to ABC Bank')
-            return user[0]
+            acid=user[0]
+            return acid
         else :
             print('Account not found !')
     else:
@@ -43,7 +44,10 @@ def register():
         print(f'Congratulations {re[2]} {re[3]} you have been registered to ATM')
 # creating balance inquiry code
 def bal_inquiry():
-    print()
+    login()
+    cursor.execute('select balance from accounts where account_id=%s',(acid))
+    balance=cursor.fetchone()
+    print(f'Your Account Balance is : {balance}')
 # creating cash withdraw code
 def cash_withdraw():
     print()
